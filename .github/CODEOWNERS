@@ -1,0 +1,24 @@
+# This is a comment.
+# Each line is a file pattern followed by one or more owners.
+
+# These owners will be the default owners for everything in
+# the repo. Unless a later match takes precedence,
+# @global-owner1 and @global-owner2 will be requested for
+# review when someone opens a pull request.
+#*       @global-owner1
+
+# The codeowner file is owned by platform-eng-admin team
+.github/CODEOWNERS @amplify-health/platform-eng-admin
+
+# Below App workflows are owned by platform-eng team ------ uncomment below rules to take effect.
+#.github/workflows/ahp*.yml @amplify-health/platform-eng-admin
+#.github/workflows/ahp*.yaml @amplify-health/platform-eng-admin
+
+# Below locks the workflows directory so no one can add additional workflows w/o owners approval.------ uncomment below rules to take effect.
+#.github/workflows/*.yml @amplify-health/platform-eng-admin
+#.github/workflows/*.yaml @amplify-health/platform-eng-admin
+
+# Below build workflows are owned by product-admin team, update the codeowner file to input correct team name ------- uncomment below rules to take effect.
+#.github/workflows/build*.yml @amplify-health/product-<product_name>-admin
+#.github/workflows/build*.yaml @amplify-health/product-<product_name>-admin
+
